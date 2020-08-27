@@ -64,10 +64,3 @@ describe("Tests admin Sign In and verify click", () => {
         page = await global.__BROWSER__.newPage()
     }, timeout)
 });
-
-
-// await page.waitForSelector('.login-name');
-// await page.click('.login-name');
-// await page.waitForSelector('.login-name a[href="http://polr.stationmyr.net/logout"]');
-// await page.click('.login-name a[href="http://polr.stationmyr.net/logout"]');
-// await page.screenshot({path: './tests/img/admin-logout.png'});
