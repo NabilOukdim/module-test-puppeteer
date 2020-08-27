@@ -9,7 +9,8 @@ const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup')
 module.exports = async function() {
     console.log('Setup Puppeteer')
     const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
+        slowMo: 250, // slow down by 250ms
         args: ['--no-sandbox']
     })
     // This global is not available inside tests but only in global teardown
